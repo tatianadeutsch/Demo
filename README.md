@@ -1,19 +1,21 @@
-'''python
-consol.log("
+#**Комментарии**
+
+
 import requests
 from pprint import pprint
 
-files_url = 'https://cloud-api.yandex.net/v1/disk/resources/files'
-upload_url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
 
-def get_token():
-    with open('token.txt', 'r') as file:
-        return file.readline()
+`files_url = 'https://cloud-api.yandex.net/v1/disk/resources/files'`
+`upload_url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'`
+
+`def get_token():`
+    `with open('token.txt', 'r') as file:`
+        `return file.readline()`
 
 
-class YaUploader:
-    files_url = 'https://cloud-api.yandex.net/v1/disk/resources/files'
-    upload_url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
+`class YaUploader:`
+    `files_url = 'https://cloud-api.yandex.net/v1/disk/resources/files'`
+    `upload_url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'`
 
     def __init__(self, token: str):
         self.token = token
@@ -54,4 +56,4 @@ if __name__ == '__main__':
     path_to_file = input('Путь к файлу: ')
     token = get_token()
     uploader = YaUploader(token)
-    result = uploader.upload(path_to_file)")'''
+    result = uploader.upload(path_to_file)
